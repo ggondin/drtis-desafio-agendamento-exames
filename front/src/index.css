@@ -1,0 +1,57 @@
+:root {
+  --color-page: #f3f7f8;
+  --color-surface: #ffffff;
+  --color-text: #193f50;
+  --color-text-muted: #687f89;
+  --color-text-soft: #95aab0;
+  --color-primary: #007d85;
+  --color-primary-hover: #00656d;
+  --color-primary-dark: #003b51;
+  --color-primary-deep: #003b53;
+  --color-mint: #9de0d6;
+  --color-mint-soft: #e2f3f1;
+  --color-border: #dce8e9;
+  --color-input: #fbfcfb;
+  --color-white: #ffffff;
+  --color-hero-muted: #b1d0d2;
+  --color-hero-line: #4e8189;
+  --color-orbit: #4c8991;
+  --color-error: #9c3434;
+  --color-error-background: #fff1ef;
+  --color-focus: #39a99f;
+  --color-sidebar-active: #165a68;
+  --color-table-header: #f7faf9;
+  --shadow-panel: 0 10px 30px rgba(24, 63, 80, 0.04);
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
+  color: var(--color-text);
+  background: var(--color-page);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+button,
+input {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}

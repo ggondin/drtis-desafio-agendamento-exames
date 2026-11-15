@@ -1,0 +1,33 @@
+{
+  "name": "agendamento-back",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=.env src/index.ts",
+    "db:seed": "tsx --env-file-if-exists=.env src/seed.ts",
+    "typecheck": "tsc --noEmit",
+    "typecheck:tests": "tsc -p tsconfig.tests.json",
+    "build": "tsc",
+    "test": "tsx --test tests/*.test.ts tests/unit/*.test.ts",
+    "test:unit": "tsx --test tests/unit/*.test.ts",
+    "start": "node --env-file-if-exists=.env dist/index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.19.0",
+    "@types/supertest": "^6.0.0",
+    "supertest": "^7.1.0",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3"
+  }
+}
